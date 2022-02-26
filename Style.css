@@ -6,21 +6,37 @@ H1 {
   font-family: "Lora", serif;
   font-size: 3rem;
 }
+H2 {
+  font-family: "Lora", serif;
+  font-size: 2.5rem;
+}
+H3 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+}
+p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 200;
+}
 /*Typography*/
 
 /* layout*/
-#map {
-  height: 600px;
-  /* The height is 400 pixels */
-  width: 100%;
-  /* The width is the width of the web page */
+.icon {
+  display: flex;
+  justify-content: flex-start;
+  /* position: absolute;
+  width: 280px; */
 }
-/*nav*/
 header {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   /* border: 1px solid #000; */
 }
+
+/* nav */
 nav {
   display: flex;
 }
@@ -29,14 +45,62 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 400px;
-  /* border: 1px solid #ccc; */
+  width: 500px;
+  border-radius: 15px;
 }
 nav li {
-  /* border: 1px solid #111; */
-  padding: 10px;
+  padding: 5px;
 }
 nav a {
+  display: block;
+  /* border-radius: 15px; */
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: #3f3f3f;
+  /* background: #fff; */
+  font-family: "Lora", serif;
+  font-size: 1.2rem;
+  padding: 10px;
 }
 nav a:hover {
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* .navlink {
+    position: absolute;
+    right: 0px;
+    height: 100vh;
+    top: 0vh;
+    background-color: #fff;
+  } */
+  header {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+  .burger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+}
+
+#map {
+  height: 600px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
