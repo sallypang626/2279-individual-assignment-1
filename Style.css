@@ -1,9 +1,42 @@
+body {
+  background: #fff2ee;
+  font-family: "Work Sans", sans-serif;
+}
+H1 {
+  font-family: "Lora", serif;
+  font-size: 3rem;
+}
 /*Typography*/
 
 /* layout*/
 #map {
-  height: 400px;
+  height: 600px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */
+}
+/*nav*/
+header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #000; */
+}
+nav {
+  display: flex;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  /* border: 1px solid #ccc; */
+}
+nav li {
+  /* border: 1px solid #111; */
+  padding: 10px;
+}
+nav a {
+}
+nav a:hover {
 }
