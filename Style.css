@@ -8,11 +8,11 @@ H1 {
 }
 H2 {
   font-family: "Lora", serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 H3 {
   font-family: "Lora", serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 p {
   font-family: "Work Sans", sans-serif;
@@ -76,6 +76,47 @@ nav a:hover {
   cursor: pointer;
 }
 
+/* container */
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  border: 3px solid #000;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0;
+}
+.box {
+  display: block;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.addressheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marker {
+  width: 20px;
+  padding: 2rem;
+}
+.col-1 {
+  width: 22.5%;
+}
+.col-2 {
+  width: 45%;
+}
+.col-3 {
+  width: 67.5%;
+}
+
 @media (max-width: 768px) {
   body {
     overflow: hidden;
@@ -119,6 +160,7 @@ nav a:hover {
 #map {
   height: 600px;
   /* The height is 400 pixels */
-  width: 100%;
+  width: 90%;
   /* The width is the width of the web page */
+  margin: 0 auto;
 }
