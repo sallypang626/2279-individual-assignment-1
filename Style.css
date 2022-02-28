@@ -9,14 +9,24 @@ H1 {
 H2 {
   font-family: "Lora", serif;
   font-size: 2rem;
+  /* color: rgba(188, 170, 164, 1); */
 }
 H3 {
   font-family: "Lora", serif;
   font-size: 1.5rem;
+  /* color: rgba(188, 170, 164, 1); */
 }
 p {
   font-family: "Work Sans", sans-serif;
   font-weight: 200;
+}
+.font-p {
+  color: rgba(255, 250, 249, 1);
+  margin: 0 auto;
+  padding: 1.5em;
+}
+.font-s {
+  color: rgba(188, 170, 164, 1);
 }
 /*Typography*/
 
@@ -78,26 +88,53 @@ nav a:hover {
 
 /* container */
 
-.container {
+.container1 {
   width: 90%;
   max-width: 1400px;
+  height: 1024px;
   margin: 0 auto;
-  border: 3px solid #000;
+  /* border: 3px solid #000; */
+}
+.container2 {
+  width: 100%;
+}
+.column1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.vector {
+  position: relative;
+}
+.welcome {
+  position: absolute;
+  text-align: center;
 }
 
 .column {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin: 1em 0;
+  background: #e8c1ba;
 }
+
 .box {
   display: block;
   background-color: #fff;
   padding: 2rem;
   border-radius: 20px;
-  margin: 0 auto;
+  margin: 20px;
 }
 
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
 .addressheading {
   display: flex;
   justify-content: center;
@@ -153,6 +190,16 @@ nav a:hover {
     align-items: center;
     cursor: pointer;
   }
+
+  .container1 {
+    height: 800px;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .block {
+    flex-direction: column;
+  }
 }
 .nav-active {
   transform: translateX(0%);
@@ -162,5 +209,25 @@ nav a:hover {
   /* The height is 400 pixels */
   width: 90%;
   /* The width is the width of the web page */
-  margin: 0 auto;
+  margin: 20px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
